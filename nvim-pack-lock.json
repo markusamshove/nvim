@@ -1,0 +1,20 @@
+{
+  "plugins": {
+    "codesandbox-theme.nvim": {
+      "rev": "0227bad9b2005e8d265db36fa645537c1fb2c445",
+      "src": "https://github.com/sdhrt/codesandbox-theme.nvim"
+    },
+    "mini.nvim": {
+      "rev": "199b3344d4c0dab13e45483834ce11bb7744fa3a",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    },
+    "mini.statusline": {
+      "rev": "b456bfe845e475e9cec065b7a9a1ef657ad2f41b",
+      "src": "https://github.com/nvim-mini/mini.statusline"
+    },
+    "nvim-lspconfig": {
+      "rev": "451d4ef9abd4f0f08e379ef0d55d1c391b6125a7",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    }
+  }
+}
