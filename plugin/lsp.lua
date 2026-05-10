@@ -1,0 +1,29 @@
+local nmap = require('keys').nmap
+local imap = require('keys').imap
+
+local mini_extra = require('mini.extra')
+local mini_pick = require('mini.pick')
+local mini_diff = require('mini.diff')
+
+vim.api.nvim_create_autocmd('LspAttach', {
+    callback = function(args)
+        -- local buffer = args.buf
+        -- local client_id = args.data.client_id
+
+        nmap('gd', function() mini_extra.pickers.lsp({scope = 'definition'}) end)
+        imap('<C-k>', vim.lsp.buf.signature_help)
+        nmap('gr', function() mini_extra.pickers.lsp({scope = 'references'}) end)
+
+        -- diagnostics current buffer
+        nmap(',6', function() mini_extra.pickers.diagnostic({scope = 'current'}) end)
+        -- diagnostics LSP workspace
+        nmap(',7', function() mini_extra.pickers.diagnostic({scope = 'all'}) end)
+
+        nmap('<space>ft', function() mini_extra.pickers.lsp({scope = 'workspace_symbol_live'}) end)
+        nmap('<space>m', function() mini_extra.pickers.lsp({scope = 'document_symbol'}) end)
+
+        nmap('<space>rn', vim.lsp.buf.rename)
+        nmap('<F2>', function() vim.diagnostic.jump({count = 1, float = true}) end)
+        nmap('<S-F2>', function() vim.diagnostic.jump({count = -1, float = true}) end)
+    end
+})
