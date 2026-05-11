@@ -7,6 +7,7 @@ vim.pack.add{
   { src = 'https://github.com/nvim-mini/mini.statusline' },
   { src = 'https://github.com/nvim-mini/mini-git' },
   { src = 'https://github.com/nvim-mini/mini.diff' },
+  { src = 'https://github.com/nvim-mini/mini.snippets' },
   { src = 'https://github.com/nvim-mini/mini.completion' },
   { src = 'https://github.com/nvim-mini/mini.icons' },
   { src = 'https://github.com/nvim-mini/mini.pick' },

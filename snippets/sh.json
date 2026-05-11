@@ -1,0 +1,4 @@
+{
+    "shebang": { "prefix": "shebang", "body": "#!/usr/bin/env bash" },
+    "set": { "prefix": "set", "body": "set -euo pipefail" }
+}
