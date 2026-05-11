@@ -1,9 +1,8 @@
 local nmap = require('keys').nmap
 local imap = require('keys').imap
+local vmap = require('keys').vmap
 
 local mini_extra = require('mini.extra')
-local mini_pick = require('mini.pick')
-local mini_diff = require('mini.diff')
 
 vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(args)
@@ -11,7 +10,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
         local client_id = args.data.client_id
         local client = vim.lsp.get_client_by_id(client_id)
         if client and client.name == 'jdtls' then
-            print(client.name)
             client.server_capabilities.semanticTokensProvider = nil
         end
 
@@ -32,5 +30,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
         nmap('<space>rn', vim.lsp.buf.rename)
         nmap('<F2>', function() vim.diagnostic.jump({count = 1, float = true}) end)
         nmap('<S-F2>', function() vim.diagnostic.jump({count = -1, float = true}) end)
+
+        nmap('<A-CR>', function() vim.lsp.buf.code_action() end)
+        vmap('<A-CR>', function() vim.lsp.buf.code_action() end)
     end
 })
