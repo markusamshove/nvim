@@ -1,0 +1,3 @@
+{
+    "assertjImport": { "prefix": "importAssertJ", "body": "import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;" }
+}
