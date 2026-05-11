@@ -8,7 +8,12 @@ local mini_diff = require('mini.diff')
 vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(args)
         -- local buffer = args.buf
-        -- local client_id = args.data.client_id
+        local client_id = args.data.client_id
+        local client = vim.lsp.get_client_by_id(client_id)
+        if client and client.name == 'jdtls' then
+            print(client.name)
+            client.server_capabilities.semanticTokensProvider = nil
+        end
 
         nmap('gd', function() mini_extra.pickers.lsp({scope = 'definition'}) end)
         imap('<C-k>', vim.lsp.buf.signature_help)
@@ -18,6 +23,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
         nmap(',6', function() mini_extra.pickers.diagnostic({scope = 'current'}) end)
         -- diagnostics LSP workspace
         nmap(',7', function() mini_extra.pickers.diagnostic({scope = 'all'}) end)
+
+        nmap(',d', function() vim.diagnostic.open_float() end)
 
         nmap('<space>ft', function() mini_extra.pickers.lsp({scope = 'workspace_symbol_live'}) end)
         nmap('<space>m', function() mini_extra.pickers.lsp({scope = 'document_symbol'}) end)

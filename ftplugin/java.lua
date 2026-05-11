@@ -3,6 +3,8 @@ local user_home = os.getenv('HOME')
 local jdtls_path = user_home .. '/Software/java-ls/jdtls'
 local formatter_path = user_home .. '/Software/java-ls/formatter.xml'
 
+vim.lsp.inlay_hint.enable()
+
 vim.lsp.config('jdtls', {
     cmd = {
         java_home .. '/bin/java',
