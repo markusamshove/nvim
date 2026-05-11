@@ -18,11 +18,11 @@ vim.api.nvim_create_autocmd('LspAttach', {
         nmap('gr', function() mini_extra.pickers.lsp({scope = 'references'}) end)
 
         -- diagnostics current buffer
-        nmap(',6', function() mini_extra.pickers.diagnostic({scope = 'current'}) end)
+        nmap('<space>6', function() mini_extra.pickers.diagnostic({scope = 'current'}) end)
         -- diagnostics LSP workspace
-        nmap(',7', function() mini_extra.pickers.diagnostic({scope = 'all'}) end)
+        nmap('<space>7', function() mini_extra.pickers.diagnostic({scope = 'all'}) end)
 
-        nmap(',d', function() vim.diagnostic.open_float() end)
+        nmap('<space>d', function() vim.diagnostic.open_float() end)
 
         nmap('<space>ft', function() mini_extra.pickers.lsp({scope = 'workspace_symbol_live'}) end)
         nmap('<space>m', function() mini_extra.pickers.lsp({scope = 'document_symbol'}) end)

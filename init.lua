@@ -1,6 +1,7 @@
 vim.pack.add{
   { src = 'https://github.com/neovim/nvim-lspconfig' },
   { src = 'https://github.com/sdhrt/codesandbox-theme.nvim' },
+  { src = 'https://github.com/stevearc/oil.nvim' },
   { src = 'https://github.com/nvim-mini/mini.extra' },
   { src = 'https://github.com/nvim-mini/mini.statusline' },
   { src = 'https://github.com/nvim-mini/mini-git' },
@@ -14,6 +15,11 @@ vim.pack.add{
 
 vim.cmd.colorscheme('codesandbox')
 
+require('oil').setup({
+    float = {
+        border = "rounded"
+    }
+})
 require('mini.extra').setup()
 require('mini.pick').setup()
 require('mini.icons').setup()
