@@ -14,8 +14,13 @@ local vmap = function(stroke, command)
     map('v', stroke, command)
 end
 
+local tmap = function (stroke, command)
+    map('t', stroke, command)
+end
+
 return {
     imap=imap,
     nmap=nmap,
     vmap=vmap,
+    tmap=tmap,
 }
