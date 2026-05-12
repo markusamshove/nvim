@@ -29,7 +29,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         nmap('<space>7', function() mini_extra.pickers.diagnostic({scope = 'all'}) end)
 
         nmap('<space>d', function() vim.diagnostic.open_float() end)
-        nmap('<space>i', function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled()) end)
+        nmap('<space>ti', function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled()) end)
 
         nmap('<space>ft', function() mini_extra.pickers.lsp({scope = 'workspace_symbol_live'}) end)
         nmap('<space>m', function() mini_extra.pickers.lsp({scope = 'document_symbol'}) end)
