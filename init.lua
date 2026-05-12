@@ -13,6 +13,7 @@ vim.pack.add{
   { src = 'https://github.com/nvim-mini/mini.pick' },
   { src = 'https://github.com/nvim-mini/mini.jump2d' },
   { src = 'https://github.com/nvim-mini/mini.trailspace' },
+  { src = 'https://github.com/nvim-mini/mini.surround' },
 }
 
 vim.cmd.colorscheme('codesandbox')
@@ -30,6 +31,7 @@ require('mini.git').setup()
 require('mini.diff').setup()
 require('mini.statusline').setup()
 require('mini.trailspace').setup()
+require('mini.surround').setup()
 require('mini.jump2d').setup({
     view = {
         dim = true,
