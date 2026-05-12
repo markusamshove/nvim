@@ -1,3 +1,7 @@
+local run = require('runcommands')
+run.set_test_command('gradlew check')
+run.set_build_command('gradlew assemble')
+
 local java_home = os.getenv('JAVA_HOME')
 local user_home = os.getenv('HOME')
 local jdtls_path = user_home .. '/Software/java-ls/jdtls'
