@@ -20,6 +20,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         end
 
         nmap('gd', function() mini_extra.pickers.lsp({ scope = 'definition' }) end)
+        nmap('gi', function() mini_extra.pickers.lsp({ scope = 'implementation' }) end)
         imap('<C-k>', vim.lsp.buf.signature_help)
         nmap('gr', function() mini_extra.pickers.lsp({ scope = 'references' }) end)
 
