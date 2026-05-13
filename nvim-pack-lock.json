@@ -52,6 +52,10 @@
       "rev": "b362246495d18c29b4545a8f1c47f627f8011b7c",
       "src": "https://github.com/nvim-mini/mini.trailspace"
     },
+    "nvim-jdtls": {
+      "rev": "77ccaeb422f8c81b647605da5ddb4a7f725cda90",
+      "src": "https://github.com/mfussenegger/nvim-jdtls"
+    },
     "nvim-lspconfig": {
       "rev": "451d4ef9abd4f0f08e379ef0d55d1c391b6125a7",
       "src": "https://github.com/neovim/nvim-lspconfig"
