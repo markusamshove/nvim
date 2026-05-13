@@ -40,7 +40,7 @@ require('mini.jump2d').setup({
 })
 
 local opt = vim.opt
-opt.number = true
+opt.number = false
 opt.tabstop = 4
 opt.shiftwidth = 4
 opt.softtabstop = 4
