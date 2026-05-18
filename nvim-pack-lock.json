@@ -8,6 +8,10 @@
       "rev": "a007cc40a4585c4f54787ddcf07295c2689daeb4",
       "src": "https://github.com/nvim-mini/mini-git"
     },
+    "mini.animate": {
+      "rev": "eee9056eecd12933dfb09b710b7f32c10200e9ea",
+      "src": "https://github.com/nvim-mini/mini.animate"
+    },
     "mini.completion": {
       "rev": "667d94669be66043123cac44e7c5d65a31657732",
       "src": "https://github.com/nvim-mini/mini.completion"
