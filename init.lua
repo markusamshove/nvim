@@ -15,6 +15,7 @@ vim.pack.add{
   { src = 'https://github.com/nvim-mini/mini.trailspace' },
   { src = 'https://github.com/nvim-mini/mini.surround' },
   { src = 'https://github.com/nvim-mini/mini.animate' },
+  { src = 'https://github.com/nvim-mini/mini.move' },
   { src = 'https://github.com/mfussenegger/nvim-jdtls' },
 }
 
@@ -35,6 +36,7 @@ require('mini.statusline').setup()
 require('mini.trailspace').setup()
 require('mini.surround').setup()
 require('mini.animate').setup()
+require('mini.move').setup()
 require('mini.jump2d').setup({
     view = {
         dim = true,
