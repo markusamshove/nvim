@@ -50,6 +50,9 @@ vim.lsp.config('jdtls', {
                     ""
                 }
             },
+            saveActions = {
+                organizeImports = true,
+            },
             import = {
                 gradle = {
                     enabled = true,
