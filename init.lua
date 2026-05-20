@@ -58,6 +58,7 @@ opt.belloff = "all"
 opt.swapfile = false
 opt.foldlevel = 0
 opt.foldmethod = "marker"
+opt.completeopt:append("fuzzy")
 
 vim.diagnostic.config({
     virtual_lines = true,
