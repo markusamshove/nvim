@@ -53,6 +53,11 @@ vim.lsp.config('jdtls', {
             saveActions = {
                 organizeImports = true,
             },
+            sources = {
+                organizeImports = {
+                    staticStarThreshold = 2,
+                },
+            },
             import = {
                 gradle = {
                     enabled = true,
