@@ -19,6 +19,7 @@ nmap('<space>td', function() vim.diagnostic.config({ virtual_lines = not vim.dia
 nmap('<space>tn', toggle_line_numbers)
 nmap('<space>1', '<CMD>Oil --float<CR>')
 nmap('<space>q', '<CMD>bd<CR>')
+nmap('<space>ct', '<CMD>StripWhitespace<CR>')
 nmap(',ct', function() require('mini.trailspace').trim() end)
 nmap('<space>rn', ":%s/\\<<C-r><C-w>\\>//gc<left><left><left>")
 nmap('<F3>', function() mini_diff.goto_hunk('next', {}) end)

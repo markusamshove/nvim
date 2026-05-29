@@ -12,7 +12,7 @@ vim.pack.add{
   { src = 'https://github.com/nvim-mini/mini.icons' },
   { src = 'https://github.com/nvim-mini/mini.pick' },
   { src = 'https://github.com/nvim-mini/mini.jump2d' },
-  { src = 'https://github.com/nvim-mini/mini.trailspace' },
+  { src = 'https://github.com/ntpeters/vim-better-whitespace' },
   { src = 'https://github.com/nvim-mini/mini.surround' },
   { src = 'https://github.com/nvim-mini/mini.animate' },
   { src = 'https://github.com/nvim-mini/mini.move' },
@@ -26,6 +26,7 @@ require('oil').setup({
         border = "rounded"
     }
 })
+
 require('mini.extra').setup()
 require('mini.pick').setup()
 require('mini.icons').setup()
@@ -33,7 +34,6 @@ require('mini.completion').setup()
 require('mini.git').setup()
 require('mini.diff').setup()
 require('mini.statusline').setup()
-require('mini.trailspace').setup()
 require('mini.surround').setup()
 require('mini.animate').setup()
 require('mini.move').setup()
