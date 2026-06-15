@@ -41,6 +41,7 @@ vim.lsp.config('jdtls', {
                 guessMethodArguments = true,
                 favoriteStaticMembers = {
                     "org.assertj.core.api.AssertionsForInterfaceTypes.assertThat",
+                    "org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy",
                     "java.util.Objects.requireNonNull",
                     "java.util.Objects.requireNonNullElse",
                     "org.mockito.Mockito.*",
