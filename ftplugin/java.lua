@@ -30,6 +30,7 @@ vim.lsp.config('jdtls', {
     flags = {
         allow_incremental_sync = true,
     },
+    -- https://github.com/eclipse-jdtls/eclipse.jdt.ls/wiki/Running-the-JAVA-LS-server-from-the-command-line#initialize-request
     settings = {
         ['java.format.settings.url'] = formatter_path,
         java = {
